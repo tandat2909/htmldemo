@@ -16,24 +16,24 @@ function view(item) {
 
 }
 
-$("#pos").mouseleave(function(){
-    $("#btnMenu").click();
-})
+
 
 $("#btnMenu").click(function () {
     let val = $("#pos").attr("val")
 
     if (val == 1) {
-        $("#pos").css("position", "relative");
-        $("#pos").attr("val", "2");
-
-        $("#iconMenu").attr("src", "image/icon/study.png")
+        $("#pos").css("position", "relative").attr("val", "2").attr("src", "image/icon/study.png")
     }
     else {
-        $("#pos").css("position", "absolute");
-        $("#pos").attr("val", "1")
-        $("#iconMenu").attr("src", "image/icon/book.png")
+        $("#pos").css("position", "absolute").attr("val", "1").attr("src", "image/icon/book.png");
     }
+    $("#pos").mouseleave(function () {
 
-});
+        $("#btnMenu").click();
+    
+    })
+})
+
+
+
 
