@@ -20,6 +20,7 @@
 
 
         }
+        
     </style>
 </head>
 
@@ -47,12 +48,15 @@
 
                 <div class="container-fluid">
                     <div class="row">
-                        <div id="pos" style="background: #fdff9cd6; position: absolute; z-index: 1;" val=1>
+                        <div id="pos" style="background: #efefef99; position: absolute; z-index: 1;" val=1>
                             <nav class="navbar justify-content-center p-0">
-                                <button class="navbar-toggler" id="btnMenu" type="button" data-toggle="collapse"
-                                    style="outline: none;" data-target="#navbarToggleExternalContent"
+                                <button class="navbar-toggler" id="btnMenu" val="0" type="button" data-toggle="collapse"
+                                    style="outline: none;" 
+                                    data-target="#navbarToggleExternalContent"
                                     aria-controls="navbarToggleExternalContent" aria-expanded="false"
+
                                     aria-label="Toggle navigation">
+                                    
                                     <span class="text-center"><img id="iconMenu" src="image/icon/book.png" style="
                                         width: 30px;
                                     "></span>
@@ -142,7 +146,7 @@
 
                                     #ifview {
                                         border: none;
-                                        background-image: url(image/2.png);
+                                        background-image: url(image/background.png);
 
                                         background-position: center;
                                         background-size: 33rem;
@@ -153,7 +157,7 @@
 
                                 <!-- thay đổi id ,aria-labelledby = ... + -tab-->
                                 <div class="tab-pane active" id="show_view"
-                                    style="background-color: #6fffde82;padding-top: 0vh;">
+                                    style="background-color: #ffffff;padding-top: 0vh;">
                                     <iframe id="ifview" src="suppage/Lời mở đầu.htm" scrolling="" width="100%"
                                         height="100%"></iframe>
                                 </div>
