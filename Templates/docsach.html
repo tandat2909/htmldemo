@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đọc Sách</title>
+    <script src="../js/Jquery/jquery-3.5.1.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" />
+    <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+
+
+    <style>
+        .fr_hr {
+            margin-bottom: 0.2rem;
+            margin-top: 0.2rem;
+            background: linear-gradient(to right, #2d51ff, #007eff, lime, red, yellow);
+            height: 0.2rem;
+
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div style="background-image: url('../image/4.jpg'); background-attachment: fixed;">
+        <div class="container p-0" style="background: white;box-shadow: 0px 0px 26px 5px #5b6d7ad9;">
+            <div id="banner">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <div class="format_title">
+                                <p style="color: red;"> binh chủng thông tin liên lạc</p>
+                                <p style="color: blue;"> trường sĩ quan thông tin</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <hr class="fr_hr">
+            <marquee style="margin-bottom: 0; color: blue;">bỏ chữ vô chạy thui </marquee>
+            <hr class="fr_hr" style="margin-bottom: 0;">
+            <div id="main ">
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div id="pos" style="background: whitesmoke; position: absolute; z-index: 1;box-shadow: rgb(247, 27, 48) 0px 0px 10px -1px;
+                        border-radius: 0px 0px 30px;" val=1>
+                            <nav class="navbar justify-content-center p-0">
+                                <button class="navbar-toggler" id="btnMenu" val="0" type="button" data-toggle="collapse"
+                                    style="outline: none;" 
+                                    data-target="#navbarToggleExternalContent"
+                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
+
+                                    aria-label="Toggle navigation">
+                                    
+                                    <span class="text-center"><img id="iconMenu" src="../image/icon/book.png" style="
+                                        width: 30px;
+                                    "></span>
+                                </button>
+                            </nav>
+
+                            <div class="collapse" id="navbarToggleExternalContent">
+                                <div class="">
+                                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                        aria-orientation="">
+                                        <style>
+                                            .nav-link {
+                                                color: #ff1717;
+                                                font-weight: bold;
+                                                padding: 0.3rem 0.3rem;
+                                                font-size: 0.9em;
+                                            }
+
+                                            .nav-link:hover {
+                                                color: #ffffffd1;
+                                                background: #b98f8fe0 !important;
+
+                                            }
+
+                                            .nav-link.active,
+                                            .show>.nav-link {
+                                                color: #fffffff0 !important;
+
+                                                background-color: #ea6565 !important;
+                                            }
+                                        </style>
+                                        <a class="" href="#"
+                                            style="font-weight: bold; text-align: center; text-decoration: none;cursor:default ;">Mục
+                                            Lục</a>
+
+                                        <a class="nav-link active " value=1 name="Lời mở đầu" data-toggle="pill"
+                                            href="#show_view" aria-selected="true" onclick="view(this)">Giới Thiệu </a>
+
+                                        <a class="nav-link" value="1" name="Cau 1 - TL" data-toggle="pill"
+                                            href="#show_view" aria-selected="false" onclick="view(this);">Nội dung
+                                            chương 1</a>
+                                        <a class="nav-link" value="1" name="Cau 2 - TL" data-toggle="pill"
+                                            href="#show_view" aria-selected="false" onclick="view(this);">Nội dung
+                                            chương 2</a>
+
+                                        <a class="nav-link" value="1" name="Cau 3 - TL" data-toggle="pill"
+                                            href="#show_view" aria-selected="false" onclick="view(this);">Nội dung
+                                            chương 3</a>
+                                        <a class="nav-link" value="1" name="Cau 4 - TL" data-toggle="pill"
+                                            href="#show_view" aria-selected="false" onclick="view(this);">Nội dung
+                                            chương 4</a>
+                                        <a class="nav-link" value="1" name="Cau 5 - TL" data-toggle="pill"
+                                            href="#show_view" aria-selected="false" onclick="view(this);">Nội dung
+                                            chương 5</a>
+                                        <a class="nav-link" value="1" name="Cau 6 - TL" data-toggle="pill"
+                                            href="#show_view" aria-selected="false" onclick="view(this);">Nội dung
+                                            chương 6</a>
+
+                                        <a class="nav-link" value="1" name="Cau 7 - TL" data-toggle="pill"
+                                            href="#show_view" aria-selected="false" onclick="view(this);">Nội dung
+                                            chương 7</a>
+                                        <a class="nav-link" value="1" name="Cau 8 - TL" data-toggle="pill"
+                                            href="#show_view" aria-selected="false" onclick="view(this);">Nội dung
+                                            chương 8</a>
+
+
+                                        <a class="nav-link" value="0" name="playmp3" data-toggle="pill"
+                                            href="#show_view" aria-selected="false" onclick="view(this);">Nhạc truyền
+                                            thống Thông Tin</a>
+                                        <a class="nav-link" value="0" name="pp" data-toggle="pill" href="#show_view"
+                                            aria-selected="false" onclick="view(this);">pp</a>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col p-0">
+
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <style>
+                                    .tab-content>.active {
+                                        height: 80.1vh;
+                                    }
+
+                                    #ifview {
+                                        border: none;
+                                        background-image: url(image/background.png);
+
+                                        background-position: center;
+                                        background-size: 33rem;
+                                        background-repeat: no-repeat;
+
+                                    }
+                                </style>
+
+                                <!-- thay đổi id ,aria-labelledby = ... + -tab-->
+                                <div class="tab-pane active" 
+                                    style="background-color: #ffffff;padding-top: 0vh;">
+                                    
+                                </div>
+                                <div class="tab-pane" 
+                                    style="background-color: #ffffff;padding-top: 0vh;">
+                                    
+                                </div>
+                                <div class="tab-pane" 
+                                    style="background-color: #ffffff;padding-top: 0vh;">
+                                    
+                                </div>
+                            </div>
+                            <script src="../js/docsach.js"></script>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>
