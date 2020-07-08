@@ -1,0 +1,27 @@
+.bg-left{
+    background: url('../../Media/image/left_banner.gif') no-repeat left;
+}
+
+.bg-right{
+    background: url('../../Media/image/right_banner.jpg') no-repeat right;
+}
+.bg-center{
+    background: url('../../Media/image/bg_banner.gif');
+}
+
+/* main */
+.menu{
+    background-color: red;
+}
+.menu h5{
+    background: url(../../Media/image/menu.png) no-repeat right ;
+    color: #FFCC00;
+    text-align: left;
+    padding-left: 7px;
+    height: 26px;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 0 0px 0;
+}
