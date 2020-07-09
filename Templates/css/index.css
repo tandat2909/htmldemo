@@ -12,6 +12,8 @@
 /* main */
 .menu{
     background-color: red;
+    box-shadow: 2px 1px 6px 0px #ff6464;
+    border-radius: 2rem 0px;
 }
 .menu h5{
     background: url(../../Media/image/menu.png) no-repeat right ;
